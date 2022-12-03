@@ -48,12 +48,14 @@ const alternateParseInput = (rawInput: string) => {
 const findBadges = (elfGroups: string[][]) => {
   return elfGroups.map((elfGroup) => {
     const splitGroups = elfGroup.map((elf) => [...elf]);
-    return splitGroups[0].find((item) => {
-      return (
-        splitGroups[1].indexOf(item) !== -1 &&
-        splitGroups[2].indexOf(item) !== -1
-      );
-    }) ?? '';
+    return (
+      splitGroups[0].find((item) => {
+        return (
+          splitGroups[1].indexOf(item) !== -1 &&
+          splitGroups[2].indexOf(item) !== -1
+        );
+      }) ?? ""
+    );
   });
 };
 
