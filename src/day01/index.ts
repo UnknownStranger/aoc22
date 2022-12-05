@@ -1,49 +1,44 @@
 import run from "aocrunner";
 
-const parseInput = (rawInput: string) => rawInput;
+const parseInput = (rawInput: string) => {
+  return rawInput
+    .split("\n\n")
+    .map((line) => line.split("\n").map((line) => parseInt(line)));
+};
 
-const getCaloriesPerElf = (input: string) => {
-  const arrayOfSums: number[] = [];
-  let currentSum = 0;
-  input.split("\n").map((value, index, array) => {
-    if (value) {
-      currentSum += parseInt(value);
-    }
-    if (!value || index === array.length - 1) {
-      arrayOfSums.push(currentSum);
-      currentSum = 0;
-    }
-  });
-  return arrayOfSums;
+const getCaloriesPerElf = (elfList: number[][]) => {
+  return elfList
+    .flatMap((elf) => {
+      return elf.reduce((a, b) => a + b);
+    })
+    .sort((a, b) => b - a);
 };
 
 const part1 = (rawInput: string) => {
-  const input = parseInput(rawInput);
-  return Math.max(...getCaloriesPerElf(input));
+  return getCaloriesPerElf(parseInput(rawInput))[0];
 };
 
 const part2 = (rawInput: string) => {
-  const input = parseInput(rawInput);
-  return getCaloriesPerElf(input)
-    .sort((a, b) => b - a)
+  return getCaloriesPerElf(parseInput(rawInput))
     .slice(0, 3)
     .reduce((a, b) => a + b);
 };
 
-const testInput = `1000
-                    2000
-                    3000
+const testInput = `
+1000
+2000
+3000
 
-                    4000
+4000
 
-                    5000
-                    6000
+5000
+6000
 
-                    7000
-                    8000
-                    9000
+7000
+8000
+9000
 
-                    10000`;
+10000`;
 
 run({
   part1: {
