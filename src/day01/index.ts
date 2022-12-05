@@ -3,7 +3,7 @@ import run from "aocrunner";
 const parseInput = (rawInput: string) => {
   return rawInput
     .split("\n\n")
-    .map((line) => line.split("\n").map((line) => parseInt(line)));
+    .map((elf) => elf.split("\n").map((calories) => parseInt(calories)));
 };
 
 const getCaloriesPerElf = (elfList: number[][]) => {
