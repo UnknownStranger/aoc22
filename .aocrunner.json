@@ -38,13 +38,13 @@
         "attempts": [
           "7376"
         ],
-        "time": 1.0532
+        "time": 1.1205
       },
       "part2": {
         "solved": true,
         "result": "2508",
         "attempts": [],
-        "time": 0.4526
+        "time": 0.4491
       }
     },
     {
@@ -65,16 +65,16 @@
     },
     {
       "part1": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "QPJPLMNNR",
         "attempts": [],
-        "time": null
+        "time": 0.6779
       },
       "part2": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "BQDNWJPVJ",
         "attempts": [],
-        "time": null
+        "time": 0.341
       }
     },
     {
