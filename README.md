@@ -17,7 +17,7 @@
 [![Day](https://badgen.net/badge/04/%E2%98%85%E2%98%85/green)](src/day04)
 [![Day](https://badgen.net/badge/05/%E2%98%85%E2%98%85/green)](src/day05)
 [![Day](https://badgen.net/badge/06/%E2%98%85%E2%98%85/green)](src/day06)
-![Day](https://badgen.net/badge/07/%E2%98%86%E2%98%86/gray)
+[![Day](https://badgen.net/badge/07/%E2%98%85%E2%98%85/green)](src/day07)
 ![Day](https://badgen.net/badge/08/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/09/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/10/%E2%98%86%E2%98%86/gray)
@@ -71,49 +71,49 @@ yarn start 1
 Day 01
 Time part 1: 0.448ms
 Time part 2: 0.675ms
-Both parts: 1.1234ms
+Both parts: 1.123ms
 ```
 
 ```
 Day 02
 Time part 1: 1.367ms
 Time part 2: 1.059ms
-Both parts: 2.4257ms
+Both parts: 2.426ms
 ```
 
 ```
 Day 03
 Time part 1: 1.121ms
 Time part 2: 0.449ms
-Both parts: 1.5696ms
+Both parts: 1.57ms
 ```
 
 ```
 Day 04
 Time part 1: 1.665ms
 Time part 2: 1.705ms
-Both parts: 3.3701ms
+Both parts: 3.37ms
 ```
 
 ```
 Day 05
 Time part 1: 0.678ms
 Time part 2: 0.341ms
-Both parts: 1.0189ms
+Both parts: 1.019ms
 ```
 
 ```
 Day 06
-Time part 1: 0.605ms
-Time part 2: 1.51ms
-Both parts: 2.1151ms
+Time part 1: 0.464ms
+Time part 2: 1.651ms
+Both parts: 2.115ms
 ```
 
 ```
 Day 07
-Time part 1: -
-Time part 2: -
-Both parts: -
+Time part 1: 1.09ms
+Time part 2: 0.743ms
+Both parts: 1.833ms
 ```
 
 ```
@@ -243,8 +243,8 @@ Both parts: -
 ```
 
 ```
-Total stars: 12/50
-Total time: 11.623ms
+Total stars: 14/50
+Total time: 13.456ms
 ```
 
 <!--/RESULTS-->

@@ -33,7 +33,7 @@ const parseInput = (rawInput: string) => {
   const moves = splitInput[1].map((x) => {
     const [count, from, to] = x.match(/\d+/g) ?? [];
     return {
-      count: parseInt(count),
+      count: parseInt(count ?? '0'),
       from: parseInt(from) - 1, // -1 because the grid is 0 indexed
       to: parseInt(to) - 1, //Same here
     };
